@@ -13,7 +13,7 @@ module.exports = {
 			fontFamily: {
 				Cairo: ["'Cairo'", 'sans-serif'],
 				dancing: ["'Dancing Script'", 'cursive'],
-				kanit: ["'Kanit'", 'sans-serif'],
+				default: ['Open Sans', 'sans-serif'],
 			},
 			keyframes: {
 				fadeIn: {

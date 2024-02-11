@@ -12,6 +12,7 @@
 			href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Dancing+Script:wght@700&display=swap"
 			rel="stylesheet"
 		/>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&display=swap" rel="stylesheet">
 		 <script src="https://kit.fontawesome.com/0a2dd49d2c.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="font-Cairo">
@@ -24,7 +25,7 @@
 				href="#home"
 				class=""
 				>
-					<img src="./images/logo3.png" alt="" class="h-15 lg:h-10 w-30" />
+					<img src="./images/logo3.png" alt="" class="h-10 w-30" />
 						</a>
 				</div>
 				<div>
@@ -39,11 +40,11 @@
 											</svg>
 										</button>
 							</button>
-							<nav class="fixed left-0 top-0 z-10 h-screen bg-primary w-72 text-slate-100 p-8" x-show="showSidenav"
+							<nav class="fixed top-0 left-0 z-10 h-screen p-8 bg-primary w-72 text-slate-100" x-show="showSidenav"
 									x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-72"
 									x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-in duration-300 "
 									x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-72" x-cloak>
-									<div class="flex w-full justify-end items-center">
+									<div class="flex items-center justify-end w-full">
 										<button @click="showSidenav=false">
 											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
 												stroke="currentColor" class="w-6 h-6">
@@ -131,7 +132,7 @@
 						<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
 						</svg>
 					</a>
-					<a class="hover:opacity-75" href="https://wa.me/0248632856" target="_blank" rel="noreferrer">
+					<a class="hover:opacity-75" href="https://wa.me/+233248632856" target="_blank" rel="noreferrer">
 						<span class="sr-only"> Whatsapp </span>
 						<i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i>
 					</a>
@@ -149,13 +150,13 @@
 		
 		</nav>
     <!-- end of navbar -->	
-
+		<main class=" lg:max-w-[1920px] m-auto">
 	  <!-- Contents -->
     <!-- Hero -->
     <section
       style="background-image: url('./images/pic2.jpg')"
       id="ss"
-      class="relative flex flex-col items-center justify-center w-full min-h-screen transition-all duration-500 bg-top bg-no-repeat bg-cover md:bg-center"
+      class="relative flex flex-col items-center justify-center w-full h-screen max-h-[120rem] transition-all duration-500 bg-top bg-no-repeat bg-cover md:bg-center"
     >
       <div class="absolute inset-0 bg-black opacity-80"></div>
       <div class="container absolute flex items-center justify-center md:m-16">
@@ -176,9 +177,9 @@
                 and elevate your grades to the next level!
               </p>
             <div class="flex items-center justify-center gap-10">
-              <a href="#"
+              <a href="tel:+233248632856"
                 ><span class="uppercase transition duration-300 hover:text-accent"
-                  >get started</span
+                  >contact us</span
                 ></a
               >
               <button
@@ -197,98 +198,184 @@
       </div>
     </section>
 
-	  <section class="items-center justify-center w-full space-y-6 text-white bg-primary p-7 md:flex">
-		<div class="lg:max-w-[1500px] m-auto w-full flex flex-col gap-6 md:flex-row">
-			<div class="flex flex-col items-center justify-center px-5 space-y-6 md:w-[50%]">
-				<p class="text-2xl font-bold capitalize font-kanit md:text-4xl"><span>become part of us</span></p>
-				<p class="text-2xl font-kanit md:text-xl"><span>You would be granted a 2 months free membership (GHS 50.99 per month)</span></p>
-				<p class="text-xl text-gray-200 font-kanit md:text-sm"> Immerse yourself in diverse cultures, broaden your perspectives, and become a true global citizen. Your journey abroad isn't just about academics; it's about personal growth, cultural enrichment, and building bridges that connect you to the world.</p>
-				<button class="bg-accent p-5 font-kanit capitalize text-xl text-neutral tracking-wide w-full hover:bg-ligherTone hover:text-dark transition duration-[300ms]">Join us today</button>
+	 	  <!-- About -->
+    <section id="about" class="px-5 pb-12 mt-5 gap-3 bg-white flex flex-col lg:flex-row">
+      <div class="md:pt-16">
+        <p class="text-5xl font-bold text-center font-default text-zinc-900">About Us</p>
+		  <div class="flex flex-col-reverse lg:flex-row pt-10">
+				<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+					<defs>
+						<clipPath id="user-space" clipPathUnits="userSpaceOnUse">
+							<path fill="#FFD6E8" d="M49.3,-32.6C64.9,-19.7,79.3,0.8,76.3,18.7C73.3,36.6,52.8,51.8,35,52.7C17.2,53.6,2.1,40.3,-12.6,31.2C-27.3,22.2,-41.7,17.5,-44.6,9C-47.5,0.5,-38.9,-11.8,-29.5,-23.3C-20.2,-34.7,-10.1,-45.3,3.4,-48C16.9,-50.7,33.7,-45.5,49.3,-32.6Z" transform="translate(100 100)" />
+						</clipPath>
+					</defs>
+					<image width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="https://unsplash.com/photos/white-and-brown-book-on-brown-woven-surface-LUGuCtvlk1Q" clip-path="url(#user-space)"/>
+				</svg>
+				<div class="py-2 pt-32 font-default md:text-xl lg:w-[70%] xl:w-[50%] flex flex-col gap-10">
+					<div class="border-4 border-primary rounded-lg shadow-2xl bg-gradient-to-bl from-ligherTone via-slate-300 to-primary">
+						<div class="p-4 flex flex-col gap-5">
+							<span class="font-default font-bold text-center text-2xl">Welcome to Reign Educational Consult.</span>
+							<p class="text-lg">
+								Your trusted partner in unlocking opportunities for academic excellence and studying abroad success. At Reign Educational Consult, we are dedicated to empowering students to achieve their educational goals through comprehensive support and guidance.
+							</p> 
+						</div>
+					</div>
+					<div>
+						Our mission is to provide unparalleled educational services tailored to meet the needs of each student.
+					</div>	
+				</div>
+			</div>
+      </div>
+	</section>
+		<!-- end of about -->
+
+	  <section class="items-center justify-center w-full gap-20 pb-20 text-white bg-primary p-7 flex flex-col">
+			<div class="flex flex-col items-center justify-center px-5 space-y-6 ">
+				<p class="text-2xl font-bold capitalize font-default md:text-5xl">
+					<span>why <mark class="from-accent bg-gradient-to-tr to-white rounded-lg">choose us</mark>?</span></p>
+				<div class="text-2xl font-default md:text-xl flex flex-col lg:flex-row gap-10">
+					<!-- cards -->
+					<div class="space-y-5">
+						<div class="border w-[23rem] rounded-lg bg-white text-black shadow-xl">
+							<div class="p-5 flex text-center flex-col gap-5">
+								<div class="flex w-full text-6xl items-center justify-center">
+									👌
+								</div>
+								<div class="text-center font-bold text-xl">
+									Individualized Approach
+								</div>
+								<p class="text-lg">
+									We recognize that every student is unique, which is why we personalize our studying approaches. Our programs are tailored to meet each student's specific needs, ensuring they receive the support and guidance necessary for success.
+								</p>
+								</div>
+						</div>
+						<div class="border w-[23rem] rounded-lg bg-white text-black shadow-xl">
+							<div class="p-5 flex text-center flex-col gap-5">
+								<div class="flex w-full text-6xl items-center justify-center">
+									😁
+								</div>
+								<div class="text-center font-bold text-xl">
+									Quality Instruction
+								</div>
+								<p class="text-lg">
+								 We pride ourselves on the quality of our education. Our tutors and advisors are highly qualified professionals who are passionate about helping students reach their full potential.
+								</p>
+								</div>
+						</div>
+					</div>
+					<div class="space-y-9">
+						<div class="border w-[23rem] rounded-lg bg-white text-black shadow-xl">
+							<div class="p-5 flex text-center flex-col gap-5">
+								<div class="flex w-full text-6xl items-center justify-center">
+									💯
+								</div>
+								<div class="text-center font-bold text-xl">
+									Proven Results
+								</div>
+								<p class="text-lg">
+								 Our track record speaks for itself. We have helped countless students achieve their academic goals and secure admission to top universities worldwide
+								</p>
+								</div>
+						</div>
+						<div class="border w-[23rem] rounded-lg bg-white text-black shadow-xl">
+							<div class="p-5 flex text-center flex-col gap-5">
+								<div class="flex w-full text-6xl items-center justify-center">
+									💪🏾
+								</div>
+								<div class="text-center font-bold text-xl">
+									Maximized Opportunities
+								</div>
+								<p class="text-lg">
+								  We understand the importance of casting a wide net when applying to study abroad. That's why we go above and beyond, applying to an average of 15 schools abroad for each student.
+								</p>
+								</div>
+						</div>
+					</div>
+				</div>
+				<button class="bg-accent p-5 w-[18rem] max-w-[30rem] font-default capitalize text-xl text-neutral tracking-wide hover:bg-ligherTone hover:text-dark transition duration-[300ms]">Join us today</button>
 			</div>
 			
-			<div class="space-y-2 md:border-l md:pl-24 border-slate-600 md:w-[50%]">
-				<p class="text-3xl md:text-4xl font-bold text-center text-transparent capitalize font-kanit bg-clip-text bg-gradient-to-r from-ligherTone via-neutral to-accent">Current countries we are working in</p>
-				<ul class="space-y-2 text-lg font-kanit">
-					<li class="transition-all duration-500 cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-yellow-500 to-green-500">Ghana</li>
-					<li class="transition-all duration-500 cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-white">USA</li>
-					<li class="transition-all duration-500 cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-900">United Kingdom</li>
-					<li class="transition-all duration-500 cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-white">Nigeria</li>
+			<div class="flex flex-col gap-10">
+				<p class="text-3xl font-bold text-center text-transparent capitalize md:text-5xl font-default bg-clip-text bg-gradient-to-r from-ligherTone via-neutral to-accent">Current countries we apply to</p>
+				<ul class="flex flex-col xl:flex-row gap-10 text-3xl 2xl:text-4xl font-default font-semibold">
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-red-500">Canada</li>
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-white to-blue-600">USA</li>
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-white">China</li>
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-white to-black">Abu dhabi</li>
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-700 to-white">Finland</li>
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-white to-blue-700">Netherlands</li>
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-white to-orange-500">Ireland</li>
+					<li class="transition-all duration-500 cursor-pointer text-transparent bg-clip-text bg-gradient-to-r from-white via-amber-800 to-amber-950">Qatar</li>
 				</ul>
 			</div> 
-		</div>
     </section>
 
-	  <!-- About -->
-    <section id="about" class="px-5 mt-5 space-x-3 bg-white flex flex-col lg:max-w-[1500px] m-auto">
-      <div class="md:pt-16">
-        <p class="text-5xl font-bold text-center font-Cairo text-zinc-900">About</p>
-        <p class="py-2 font-kanit md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod ratione recusandae omnis voluptates quasi alias! Non laudantium sit veniam architecto rerum eum accusantium aperiam, ea sunt eius maxime nulla aliquid suscipit dignissimos recusandae accusamus illo atque fugiat consectetur quibusdam, alias labore. Earum laborum sapiente assumenda facilis repudiandae quia in?</p>
-      </div>
       
 		<!-- faq -->
 		<!-- component -->
-		<div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
+		<section>
+		<div class="max-w-screen-xl px-5 mx-auto bg-white min-h-sceen">
 			<div class="flex flex-col items-center">
-				<h2 class="font-bold text-5xl mt-5 tracking-tight">
+				<h2 class="mt-5 text-5xl font-bold tracking-tight">
 					FAQ
 				</h2>
-				<p class="text-neutral-500 text-xl mt-3">
+				<p class="mt-3 text-xl text-neutral-500">
 					Frequenty asked questions
 				</p>
 			</div>
-			<div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+			<div class="grid max-w-xl mx-auto mt-8 divide-y divide-neutral-200 text-3xl">
 				<div class="py-5">
 					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+						<summary class="flex items-center justify-between font-medium list-none cursor-pointer">
 							<span>What services does our educational consultancy offer?</span>
 							<span class="transition group-open:rotate-180">
 							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
 							</svg>
 						</span>
 						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+						<p class="mt-3 text-neutral-600 group-open:animate-fadeIn">
 							We specialize in assisting students with study abroad applications, providing tutoring services, and offering SAT exam preparation.
 						</p>
 					</details>
 				</div>
 				<div class="py-5">
 					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+						<summary class="flex items-center justify-between font-medium list-none cursor-pointer">
 							<span> Why should you consider SAT exam preparation, and how can we help?</span>
 							<span class="transition group-open:rotate-180">
 							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
 		</svg>
 						</span>
 						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+						<p class="mt-3 text-neutral-600 group-open:animate-fadeIn">
 							The SAT is a crucial component of college admissions. Our dedicated SAT preparation programs include comprehensive study materials, practice exams, and expert guidance to help you achieve your best possible score.
 						</p>
 					</details>
 				</div>
 				<div class="py-5">
 					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+						<summary class="flex items-center justify-between font-medium list-none cursor-pointer">
 							<span> Are our tutors qualified and experienced?</span>
 							<span class="transition group-open:rotate-180">
 							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
 		</svg>
 						</span>
 						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+						<p class="mt-3 text-neutral-600 group-open:animate-fadeIn">
 							Our tutors are highly qualified professionals with extensive experience in their respective subjects.
 						</p>
 					</details>
 				</div>
 				<div class="py-5">
 					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+						<summary class="flex items-center justify-between font-medium list-none cursor-pointer">
 							<span>How do you get started with our services?</span>
 							<span class="transition group-open:rotate-180">
 							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
 		</svg>
 						</span>
 						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+						<p class="mt-3 text-neutral-600 group-open:animate-fadeIn">
 							Simply contact us through our email, phone number, or visit our office. Our consultants will guide you through the initial steps, including a free consultation to understand your goals and needs.
 
 						</p>
@@ -296,81 +383,18 @@
 				</div>
 				<div class="py-5">
 					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+						<summary class="flex items-center justify-between font-medium list-none cursor-pointer">
 							<span>What countries do we assist students in applying to for their studies abroad?</span>
 							<span class="transition group-open:rotate-180">
 							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
 		</svg>
 						</span>
 						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+						<p class="mt-3 text-neutral-600 group-open:animate-fadeIn">
 							We have expertise in applications to various countries, including the United States, Canada, China, Abu Dhabi, The United Kingdom and more.
 						</p>
 					</details>
 				</div>
-				<!-- <div class="py-5">
-					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-							<span> How do I access  documentation?</span>
-							<span class="transition group-open:rotate-180">
-							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-		</svg>
-						</span>
-						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-							Documentation is available on the company's website and can be accessed by
-							logging in to your account. The documentation provides detailed information on how to use the ,
-							as well as code examples and other resources.
-						</p>
-					</details>
-				</div> -->
-				<!-- <div class="py-5">
-					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-							<span> How do I contact you?</span>
-							<span class="transition group-open:rotate-180">
-							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-		</svg>
-						</span>
-						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-							If you need help with the platform or have any other questions, you can contact the
-							company's support team by submitting a support request through the website or by emailing
-							support@We.com.
-						</p>
-					</details>
-				</div> -->
-				<!-- <div class="py-5">
-					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-							<span> Do you offer any discounts or promotions?</span>
-							<span class="transition group-open:rotate-180">
-							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-		</svg>
-						</span>
-						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-							We may offer discounts or promotions from time to time. To stay up-to-date on the latest
-							deals and special offers, you can sign up for the company's newsletter or follow it on social media.
-						</p>
-					</details>
-				</div> -->
-				<!-- <div class="py-5">
-					<details class="group">
-						<summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-							<span> How do we compare to other similar services?</span>
-							<span class="transition group-open:rotate-180">
-							<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-		</svg>
-						</span>
-						</summary>
-						<p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-							This platform is a highly reliable and feature-rich service that offers a wide range
-							of tools and functionality. It is competitively priced and offers a variety of billing options to
-							suit different needs and budgets.
-						</p>
-					</details>
-				</div> -->
 			</div>
 		</div>
     </section>    
@@ -380,7 +404,7 @@
   <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
-      <!-- <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" /> -->
+      <!-- <img src="#" class="h-6 mr-5 sm:h-9" alt="logo" /> -->
 		<div class="flex items-center justify-center space-x-3 text-sm sm:text-lg md:text-3xl">
 			<a
 				href="#home"
@@ -391,7 +415,7 @@
 					>
 				</div>
         <p class="max-w-xs mt-4 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+          Our mission is to provide unparalleled educational services tailored to meet the needs of each student.
         </p>
         <div class="flex mt-8 space-x-6 text-gray-600">
           <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
@@ -478,6 +502,7 @@
     </p>
   </div>
 </footer>
+</main>
 	 <!-- end of footer -->
 	 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
 	 <script>
